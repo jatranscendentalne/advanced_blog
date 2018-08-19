@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'articles/ :id/edit', to: 'articles#edit', as: 'edit_article'
   post 'articles', to: 'articles#create'
   patch 'articles/:id', to: 'articles#update'
+  delete 'articles/:id', to: 'articles#destroy'
 end
